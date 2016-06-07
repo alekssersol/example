@@ -1,0 +1,212 @@
+*{padding:0px;margin:0px;}
+body{
+  background:#333;
+  background-image:url(../images/bg2.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: attachment;
+}
+.nav-container-mobile{
+  border-bottom:3px solid #aaf;
+  width:100%;
+  background:#333;
+  font-size:0px;
+  text-align:center;
+  display:none;
+}
+  .mobile-menu{
+    display:block;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:20px;
+    padding-right:20px;
+    font-size:30px;
+    font-family:arial;
+    font-weight:700;
+    color:white;
+  }
+  .mobile-menu:hover{
+    cursor:pointer;
+  }
+.nav-container{
+  border-bottom:3px solid #aaf;
+  width:100%;
+  background:#333;
+  font-size:0px;
+  text-align:center;
+}
+  .nav-button{
+    display:inline-block;
+  }
+    .nav-button a{
+      display:block;
+      padding-top:5px;
+      padding-bottom:5px;
+      padding-left:20px;
+      padding-right:20px;
+      font-size:30px;
+      font-family:arial;
+      font-weight:700;
+      text-decoration:none;
+      color:white;
+      background:#333;
+      transition-properties:background,color;
+      transition-duration:0.5s;
+    }
+    .nav-button a:hover{
+      background:#fff;
+      color:black;
+    }
+      .nav-sub-menu{
+        z-index:999;
+        display:none;
+        position:absolute;
+      }
+      .nav-sub-menu>a{
+        font-size:23px;
+        text-align:left;
+      }
+
+.jumbotron{
+  width:100%;
+  
+  margin-top:2%;
+  margin-bottom:2%;
+  background:#777;
+  font-size:18px;
+  color:white;
+  opacity:0.8;
+  text-align:center;
+}
+  .jumbotron>p{
+    margin:auto;
+    padding-top:20px;
+    padding-bottom:20px;
+    font-family:arial;
+    width:60%;
+  }
+
+.content-container{
+  width:100%;
+  font-size:0px;
+  text-align:center;
+}
+  .content-column{
+    width:30.66%;
+    background:#777;
+    display:inline-block;
+    vertical-align:top;
+
+    font-size:20px;
+    color:white;
+  }
+  div.content-column:nth-child(2){
+    margin-left:2%;
+    margin-right:2%;
+  }
+    .content-text{
+      margin:10px;
+      margin-left:30px;
+      text-align:left;
+      font-family:arial;
+    }
+
+.slider{
+  width:500px;
+  margin:auto;
+  margin-bottom:2%;
+}
+  .ekran{
+    width:500px;
+    height:300px;
+    overflow:hidden;
+  }
+    .slide-container{
+      line-height:0px; 
+      width:2000px;
+      height:300px;
+      font-size:0px;
+      margin-left:0px;
+      -webkit-transition:margin-left 0.7s linear;
+      -moz-transition:margin-left 0.7s linear;
+      -o-transition:margin-left 0.7s linear;
+      transition:margin-left 0.7s linear;
+    }
+      .slide{
+        background:black;
+        text-align:center;
+        overflow:hidden;
+        display:inline-block;
+        width:500px;
+        height:300px;
+        font-size:40px;
+      }
+  .red{background:red}
+  .yellow{background:yellow}
+  .blue{background:blue}
+  .green{background:#0f0;}
+  .slide-buttons{
+    width:500px;
+    text-align:center;
+    background:#555;
+  }
+    .slide-button{
+      width:20px;
+      height:20px;
+      border-radius:10px;
+      display:inline-block;
+      margin:5px;
+      margin-top:10px;
+      margin-left:25px;
+    }
+    .slide-button:nth-child(1){
+      margin-left:0px;
+    }
+
+.footer{
+  margin-top:2%;
+  width:100%;
+  height:100px;
+  background:#444;
+  color:#fff;
+  font-size:15px;
+  font-family:arial;
+  font-weight:500;
+}
+  div.footer>div{
+    color:#fff;
+    font-size:30px;
+    text-align:center;
+  }
+  div.footer>a{
+    color:#0ff;
+  }
+
+@media screen and (max-width:768px){
+  .nav-container-mobile{
+    display:block;
+  }
+  .nav-container{
+    display:none;
+  }
+  .nav-container-mobile .nav-button{
+    display:none;
+  }
+  .nav-container-mobile .nav-sub-menu{
+    position:relative;
+  }
+  .nav-container-mobile .nav-sub-menu>a{
+    text-align:center;
+  }
+
+  .content-column{
+    width:100%;
+    margin-left:0px;
+    margin-right:0px;
+  }
+    div.content-column:nth-child(2){
+      margin-left:0px;
+      margin-right:0px;
+    }
+}
+
